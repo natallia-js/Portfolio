@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body class="portfolio-body">
+    <div class="item1"><img src="./NF.png" alt="Avatar Natallia Fedartsova" class="avatar"></div>
+
+    <div class="item2">
+      <span class="fio">Natallia Fedartsova</span><br/>
+      <a href="https://github.com/natallia-js/">Github</a><br/>
+      <a href="https://www.facebook.com/profile.php?id=100001848108001">Facebook</a>
+    </div>
+
+    <div class="break"></div>
+
+    <div class="show-education">
+      <div class="education-row">
+        <span class="education-text">Education</span>
+        <span class="x-text" onclick="showMyEducation()">v</span>
+      </div>
+    </div>
+    <div class="content">
+      <p>
+        <ul class="education-items">
+          <li>
+            School<br>
+            1991 - 2001
+          </li>  
+          <li>
+            Belarussian State University of Computer Science and Radioengineering<br>
+            2001 - 2006 (bachelor)
+          </li>
+          <li>
+            Belarussian State University of Computer Science and Radioengineering<br>
+            2006 - 2007 (master)
+          </li>
+          <li>
+            Institute of Mathematics, National Academy of Sciences<br>
+            2007 - 2014 (PhD)
+          </li>
+          <li>
+            Institute of Control and Social Technologies, Belarussian State University<br>
+            Course: Dynamic web-pages developing using JavaScript
+          </li>
+          <li>
+            Belarussian State Institute for Continuing Education and Retraining of Personnel in Standardization, Metrology and Quality Management<br>
+            Course: Certification of products and services (training of railway expert auditors)
+          </li>
+          <li>
+            Institute of Informatization and Management Technologies, Belarussian State University<br>
+            Course: Development of security tasks based on security profiles
+          </li>
+          <li>
+            RSSchool Courses<br>
+            2019 - 2020 (Java Script)
+          </li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="break"></div>
+
+    <div class="item4">
+      Projects
+    </div>
+    <div class="projects">
+      <div class="slider__wrapper">
+        <div class="slider__item">
+          <div class="theyalow_project">
+            <p class = "project__title">theyalow</p>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+            <div class="tap-to-see-project">
+              <span>Tap on image to see the project</span>
+              <span>&#8250;</span>
+            </div>
+          </div>
+          <a class="theyalow-ref" href="./project_page_ref.html?project=theyalow">
+            <img class="project-img" src="./theyalow/img/parrots.svg" 
+              alt="theyalow project image">
+          </a>
+        </div>
+        <div class="slider__item">
+          <div class="repair_design_project">
+            <p class = "project__title">repair-design-project</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <div class="tap-to-see-project">
+              <span>Tap on image to see the project</span>
+              <span>&#8250;</span>
+            </div>
+          </div>
+          <a class="theyalow-ref" href="./project_page_ref.html?project=repair">
+            <img class="project-img" src="./repair-design-project/image 4.3.svg" 
+              alt="repair-design project image">
+          </a>
+        </div>
+      </div>
+      <a class="slider__control slider__control_left" href="#" role="button"></a>
+      <a class="slider__control slider__control_right" href="#" role="button"></a>
+    </div>
+
+    <script src="./collapsible.js"></script>
+    <script src="./slider.js"></script>
+  </body>
+</html>

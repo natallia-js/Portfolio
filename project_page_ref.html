@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portfolio - project</title>
+    <link rel="stylesheet" href="./project_page_ref.css">
+  </head>
+  <body onload="onLoad()">
+    <script>
+      function getParameterByName(name, url) {
+        if (!url) {
+          url = window.location.href;
+        }
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) {
+          return null;
+        }
+        if (!results[2]) {
+          return '';
+        }
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+      function onLoad() {
+        let element = document.getElementById("project-frame");
+        if (element) { 
+          let param = getParameterByName("project", document.url);
+          if (param == "theyalow") {
+            element.setAttribute("src", "./theyalow/index.html");
+          } else if (param == "repair") {
+            element.setAttribute("src", "./repair-design-project/index.html");
+          }
+        }
+      }
+    </script>
+    <iframe id="project-frame"></iframe>
+  </body>
+</html>
