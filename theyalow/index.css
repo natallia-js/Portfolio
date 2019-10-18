@@ -1,1 +1,586 @@
+@font-face {
+  font-family: "Lucida Sans";
+  src: url("./fonts/LucidaSans/lucida sans italic.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
 
+@font-face {
+  font-family: "Segoe WP";
+  src: url("./fonts/SegoeWP/ofont.ru_Segoe WP Light.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("./fonts/ASAP/Asap-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./fonts/PT Sans/PTC55F.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* ------------------------------------------*/
+/*
+#wrapper {
+  display: inline-block;
+  width: 1300px !important;
+  border: 1px solid gray;
+  padding: 2px;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+.theyalow-body {
+  width: 1300px;
+  /*height: 1847px;*/
+
+  text-align: center;
+}
+
+/* ------------------------------------------*/
+
+.upper-div {
+  width: 100%;
+  height: 566px;
+
+  background: url("./img/upper_background.svg");
+}
+
+/* ------------------------------------------*/
+
+.theyalow-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  width: 100%;
+  height: 110px;
+
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+@media screen and (max-width: 680px) {
+  .upper-div {
+    height: 300px;
+  }
+
+  .theyalow-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* ------------------------------------------*/
+
+.theyalow-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  width: 560px;
+  height: 100%;
+}
+
+.theyalow-logo__block {
+  height: auto;
+  width: auto;
+
+  font-size: 41px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Lucida Sans", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.theyalow-logo__img {
+  width: 83px;
+  height: 83px;
+}
+
+/* ------------------------------------------*/
+
+.theyalow-menu {
+  width: 453px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.theyalow-main-nav {
+  width: 100%;
+  height: 41px;
+  margin: 0;
+  position: relative;
+  
+  vertical-align: bottom;
+  text-align: center;
+
+  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+
+  box-shadow:
+   -2px -1px rgb(220,195,35), -2px -2px rgb(192,167,7),
+   -4px -3px rgb(219,194,34), -4px -4px rgb(191,166,6),
+   -6px -5px rgb(218,193,33), -6px -6px rgb(190,165,5);
+}
+
+.theyalow-main-nav__menu {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+
+.theyalow-main-nav__menu__li { 
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.theyalow-main-nav__menu__li:not(:last-child) { 
+  border-right: 1px solid #9b7d0844;
+}
+
+.theyalow-main-nav__ref {
+  text-decoration: none;
+
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: #9b7d08;
+  font-family: "Segoe WP", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.theyalow-main-nav__ref__img {
+  padding-right: 10px;
+}
+
+.theyalow-main-nav__menu a.current,
+.theyalow-main-nav__menu a:hover {
+  background: rgba(0,0,0,.1);
+  color: rgba(0,0,0,1);
+}
+
+@media screen and (max-width: 680px) {
+  .top-menu {margin: 0;}
+  .theyalow-main-nav__menu li {
+    display: block;
+    margin-right: 0;
+  }
+  .theyalow-main-nav__menu:before, 
+  .theyalow-main-nav__menu:after {
+    content: none;
+  }
+  .theyalow-main-nav__menu a {
+    display: block;
+  }
+}
+
+/* ------------------------------------------*/
+
+.theyalow-clip-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  width: 100%;
+  height: 456px;
+}
+
+.left-arrow-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 140px;
+  height: 100%;
+}
+
+.clip-block {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 560px;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.theyalow-video-img {
+  position: absolute;
+
+  width: 100%;
+  height: 326px; 
+}
+
+.theyalow-video {
+  position: relative;
+
+  width: 100%;
+  height: 326px;
+
+  opacity: 0.5;
+}
+
+.the-cool-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 453px;
+  height: 100%;
+
+  font-size: 63px;
+  letter-spacing: 1px;
+  font-family: "Asap";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.the-cool-block__span1 {
+  color: #f5c506;
+}
+
+.the-cool-block__span2 {
+  color: #ffffff;
+}
+
+.right-arrow-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  width: 140px;
+  height: 100%;
+}
+
+/* ------------------------------------------*/
+
+.theyalow-icons-area {
+  width: 100%;
+  height: 213px;
+}
+
+.theyalow-icons-area__menu {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+
+.theyalow-icons-area__menu__li { 
+  height: 100%;
+  width: 350px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid #9b7d0844;
+}
+
+.theyalow-icons-area__menu__li:first-child { 
+  border-left: 1px solid #9b7d0844;
+}
+
+.theyalow-icons-area__ref {
+  text-decoration: none;
+
+  font-size: 27px;
+  letter-spacing: 0px;
+  color: #000000;
+  font-family: "Segoe WP", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theyalow-icons-area__ref__img {
+  width: 110px;
+  height: 110px;
+}
+
+.theyalow-icons-area__menu a.current,
+.theyalow-icons-area__menu a:hover {
+  background: rgba(0,0,0,.1);
+  color: rgba(0,0,0,1);
+}
+
+/* ------------------------------------------*/
+
+.theyalow-video-area {
+  width: 100%;
+  height: 509px;
+
+  background: url("./img/video_background.svg");
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.theyalow-video-area__head {
+  width: 100%;
+  height: 100px;
+
+  font-size: 37px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  padding-left: 140px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.theyalow-video-area__main {
+  width: 100%;
+  height: 349px;
+
+  padding-left: 120px;
+  padding-right: 120px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.theyalow-video-area__main__1 {
+  width: 350px;
+  height: 233px;
+
+  background-color: #ec9e03;
+
+  font-size: 29px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe WP";
+  font-weight: 300;
+
+  padding: 25px;
+  text-align: left;
+}
+
+.theyalow-video-area__main__2 {
+  width: 350px;
+  height: 233px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.theyalow-video-area__main__2__img {
+  position: absolute;
+
+  width: 312px;
+  height: 100%;
+}
+
+.theyalow-video2 {
+  position: relative;
+
+  width: 312px;
+  height: 100%;
+
+  opacity: 0.2;
+}
+
+.theyalow-video-area__main__3 {
+  width: 350px;
+  height: 233px;
+
+  background-color: #ec9e03;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theyalow-video-area__main__3__img {
+  width: 164px;
+  height: 134px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.theyalow-video-area__main__4 {
+  width: 113px;
+  height: 86px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ccaf4efd;
+}
+
+.theyalow-video-area__main__4__date {
+  font-size: 51px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+}
+
+.theyalow-video-area__main__4__month {
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #b26529;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.theyalow-video-area__foot {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.theyalow-video-area__foot__range {
+  width: 897px;
+  height: 15px;
+
+  -webkit-appearance: none !important;
+  background-color: #e6e2b2;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.theyalow-video-area__foot__range:hover {
+  background-color: #ebd58e;
+}
+
+.theyalow-video-area__foot__range::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 197px;
+  height: 15px;
+  background-color: #ec9e03;
+  border-radius: 30px;
+  box-shadow: 0px 0px 3px #bbca99;
+  transition: all 0.5s ease;
+}
+.theyalow-video-area__foot__range::-webkit-slider-thumb:hover {
+  background-color: #ec450370;
+}
+.theyalow-video-area__foot__range::-webkit-slider-thumb:active {
+  box-shadow: 0px 0px 1px #a09e8a;
+}
+
+/* ------------------------------------------*/
+
+.lower-div {
+  width: 100%;
+  height: 499px;
+
+  background: url("./img/lower_background.svg");
+
+  box-shadow: inset 0 -8px 6px -6px #000000;
+}
+
+/* ------------------------------------------*/
+
+.theyalow-footer {
+  display: inline-block;
+
+  width: 100%;
+  height: 61px;
+
+  background: url("./img/lower_background.svg");
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-left: 140px;
+
+  font-size: 29px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Lucida Sans", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
