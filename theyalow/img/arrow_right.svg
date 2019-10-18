@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 60" width="35" height="60">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #f5c506 } 
+		.shp1 { fill: #ffffff } 
+	</style>
+	<g id="bnner+header">
+		<g id="ctrl">
+			<path id="Rectangle 3" class="shp0" d="M2 2L34 2L34 59L2 59L2 2Z" />
+			<path id="Shape 1 copy" class="shp1" d="M25.99 29.2L23.03 32.18L23.02 32.18L16.73 38.52C16.73 38.52 15.23 39.72 13.92 38.39C12.62 37.05 13.64 35.65 13.64 35.65L19.92 29.34L13.32 23.3C13.32 23.3 12.53 21.54 13.51 20.53C14.49 19.53 16.28 20.32 16.28 20.32L22.88 26.36L22.9 26.34L25.99 29.2Z" />
+		</g>
+	</g>
+</svg>
