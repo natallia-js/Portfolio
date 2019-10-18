@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>portfolio</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./swiper.css">
   </head>
   <body class="portfolio-body">
     <div class="item1"><img src="./NF.png" alt="Avatar Natallia Fedartsova" class="avatar"></div>
@@ -68,6 +69,52 @@
       Projects
     </div>
     <div class="projects">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class = "project__title">theyalow</p>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+            <div class="tap-to-see-project">
+              <span>Tap on image to see the project</span>
+              <span>&#8250;</span>
+            </div>
+          </div>
+          <a class="img-ref" href="./project_page_ref.html?project=theyalow">
+            <img class="project-img" src="./theyalow/img/parrots.svg" 
+              alt="theyalow project image">
+          </a>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class = "project__title">repair-design-project</p>
+            <ul>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ul>
+            <div class="tap-to-see-project">
+              <span>Tap on image to see the project</span>
+              <span>&#8250;</span>
+            </div>
+          </div>
+          <a class="img-ref" href="./project_page_ref.html?project=repair">
+            <img class="project-img" src="./repair-design-project/image 4.3.svg" 
+              alt="repair-design project image">
+          </a>
+        </div>
+      </div>
+      <a class="slider__control slider__control_left" href="#" role="button"></a>
+      <a class="slider__control slider__control_right" href="#" role="button"></a>
+   </div>
+ <!--
+    <div class="item4">
+      Projects
+    </div>
+    <div class="projects">
       <div class="slider__wrapper">
         <div class="slider__item">
           <div class="theyalow_project">
@@ -109,8 +156,14 @@
       <a class="slider__control slider__control_left" href="#" role="button"></a>
       <a class="slider__control slider__control_right" href="#" role="button"></a>
     </div>
-
+  -->
     <script src="./collapsible.js"></script>
     <script src="./slider.js"></script>
+    <script src="./swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container');
+    </script>
   </body>
 </html>
