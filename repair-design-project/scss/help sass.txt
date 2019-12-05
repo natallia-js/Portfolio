@@ -1,0 +1,13 @@
+sass --watch index.scss:index.css
+
+sass --watch index.scss ..\css\index.css
+
+sass --watch .:../css
+
+
+sass fonts.scss ../css/fonts.css
+sass vars.scss ../css/vars.css
+sass buttons.scss ../css/buttons.css
+sass header.scss ../css/header.css
+sass instagram_and_main_img_block.scss ../css/instagram_and_main_img_block.css
+sass main.scss ../css/main.css

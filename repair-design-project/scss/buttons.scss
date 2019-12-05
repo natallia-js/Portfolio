@@ -1,0 +1,35 @@
+@import 'vars';
+
+@mixin common-btn-styles ($width,
+                          $height,
+                          $font-size) {
+  width: $width;
+  height: $height;
+  box-shadow: $btn-box-shadow;
+  border-radius: $btn-border-radius;
+
+  color: $main-text-color;
+  font-size: $font-size;
+  text-transform: uppercase;
+}
+
+.color-btn {
+  background: $second-text-color;
+  border: none;
+}
+
+.transpar-btn {
+  background-color: transparent;
+  border: $btn-border;
+}
+
+.color-btn:hover, .color-btn:focus,
+.transpar-btn:hover, .transpar-btn:focus {
+  cursor: pointer;
+}
+
+.color-btn:active,
+.transpar-btn:active {
+  transform: translate(-3px, 3px);
+  box-shadow: $active-btn-box-shadow;
+}

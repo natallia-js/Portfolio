@@ -1,0 +1,104 @@
+@import 'fonts';
+@import 'vars';
+@import 'buttons';
+
+header {
+  position: relative;
+  width: 100%;
+  height: $header-height;
+  
+  background: $main-color;
+  text-transform: uppercase;
+  font-size: $header-font-size;
+  font-family: $FuturaDemiC;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .logo {
+    position: absolute;
+    left: 5.7%;
+    
+    color: $second-text-color;
+  }
+  
+  h1 {
+    display: none;
+  }
+  
+  nav {
+    position: absolute;
+    left: 24.84%;
+    
+    font-family: $FuturaBookC;
+
+    display: flex;
+    flex-direction: row;
+  
+    .main-menu-item {
+      margin-right: 6.96%;
+      text-decoration: none;  
+    }
+  
+    .main-menu-active-item {
+      color: $second-text-color;
+    }
+
+    .main-menu-item:active {
+      font-size: calc(100% + 5px);
+    }
+
+    .main-menu-item:hover, 
+    .main-menu-item:focus {
+      cursor: pointer;
+    }
+  }
+  
+  .tel {
+    position: absolute;
+    left: 69.96%;
+        
+    text-decoration-line: underline;
+    color: $second-text-color;
+  }
+    
+  .request-call-btn {
+    position: absolute;
+    left: 81.85%;
+
+    @include common-btn-styles($request-call-btn-width,
+                               $request-call-btn-height,
+                               $button-font-size);
+  }
+}
+
+@media screen and (max-width: 680px) {
+
+  header {
+    height: $header-height-mobile;
+
+    font-size: $header-font-size-mobile;
+
+    .logo {
+      left: 4.8%;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .tel {
+      left: 70%;
+          
+      text-decoration-line: none;
+      color: $main-text-color;
+    }
+
+    .request-call-btn {
+      display: none;
+    }
+      
+  }
+
+}

@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../assets/fonts/FuturaDemiC/FuturaDemiC.otf");
+  src: url("../assets/fonts/FuturaDemiC/FuturaDemiC.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../assets/fonts/FuturaBookC/FuturaBookC.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../assets/fonts/Yeseva-One/YesevaOne-Regular_v2.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+.color-btn {
+  background: #E3B873;
+  border: none;
+}
+
+.transpar-btn {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.color-btn:hover, .color-btn:focus,
+.transpar-btn:hover, .transpar-btn:focus {
+  cursor: pointer;
+}
+
+.color-btn:active,
+.transpar-btn:active {
+  transform: translate(-3px, 3px);
+  box-shadow: inset 0 0 0 10px 10px #000000;
+}
+
+.instagram-and-main-img-block {
+  width: 100%;
+  height: 707px;
+  display: flex;
+  flex-direction: row;
+}
+.instagram-and-main-img-block .instagram {
+  width: 82px;
+  background: #131313;
+  font-size: 14px;
+  font-family: FuturaDemiC, sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.instagram-and-main-img-block .instagram a {
+  display: block;
+  height: 89px;
+  width: 89px;
+  margin-right: 75px;
+  color: #E3B873;
+  transform: rotate(90deg);
+  text-decoration: none;
+  text-align: center;
+}
+.instagram-and-main-img-block .instagram .inst-vr {
+  display: block;
+  width: 1px;
+  height: 50px;
+  border-left: 2px solid #E3B873;
+}
+.instagram-and-main-img-block .instagram a:hover {
+  cursor: pointer;
+}
+.instagram-and-main-img-block .instagram a:active {
+  font-size: calc(100% + 5px);
+  width: 120px;
+  height: 120px;
+  margin-right: 100px;
+  text-align: center;
+}
+.instagram-and-main-img-block .main-img-block {
+  width: 100%;
+  padding-left: 60px;
+  padding-top: 155px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/img/image 4.3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.instagram-and-main-img-block .main-img-block .title {
+  display: block;
+  position: relative;
+  font-family: Yeseva One, sans-serif;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+.instagram-and-main-img-block .main-img-block .title span {
+  color: #E3B873;
+}
+.instagram-and-main-img-block .main-img-block .description {
+  display: block;
+  position: relative;
+  margin-right: 792px;
+  font-family: FuturaBookC, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 41px;
+}
+.instagram-and-main-img-block .main-img-block .btns-block {
+  position: relative;
+}
+.instagram-and-main-img-block .main-img-block .btns-block .calc-subm-btn {
+  display: inline-block;
+  margin-right: 20px;
+  width: 207px;
+  height: 51px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 680px) {
+  .instagram-and-main-img-block {
+    height: 476px;
+  }
+  .instagram-and-main-img-block .instagram {
+    display: none;
+  }
+  .instagram-and-main-img-block .main-img-block {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 85px;
+  }
+  .instagram-and-main-img-block .main-img-block .title {
+    font-size: 23px;
+    line-height: 132.83%;
+  }
+  .instagram-and-main-img-block .description {
+    font-size: 18px !important;
+    line-height: 135.84% !important;
+    margin-bottom: 36px !important;
+    margin-right: 0 !important;
+  }
+  .instagram-and-main-img-block .btns-block {
+    width: 100%;
+  }
+  .instagram-and-main-img-block .btns-block .calc-subm-btn {
+    display: block;
+    width: 100% !important;
+    height: 51px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .instagram-and-main-img-block .btns-block .calc-subm-btn.transpar-btn {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=instagram_and_main_img_block.css.map */

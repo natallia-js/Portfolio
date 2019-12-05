@@ -1,0 +1,162 @@
+@import 'fonts';
+@import 'vars';
+@import 'buttons';
+
+.instagram-and-main-img-block {
+  width: 100%;
+  height: $main-picture-height;
+  
+  display: flex;
+  flex-direction: row;
+  
+  .instagram {
+    width: $instagram-block-width;
+      
+    background: $main-color;
+    font-size: $header-font-size;
+    font-family: $FuturaDemiC;
+    text-transform: uppercase;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+  
+    a {
+      display: block;
+      height: 89px;
+      width: 89px;
+      margin-right: 75px;
+        
+      color: $second-text-color;
+
+      transform: rotate(90deg);
+  
+      text-decoration: none;
+      text-align: center;
+    }
+  
+    .inst-vr {
+      display: block;
+      width: 1px;
+      height: 50px;
+  
+      border-left: 2px solid $second-text-color;
+    }
+  
+    a:hover {
+      cursor: pointer;
+    }
+  
+    a:active {
+      font-size: calc(100% + 5px);
+      width: 120px;
+      height: 120px;
+      margin-right: 100px;
+
+      text-align: center;
+    } 
+  }
+  
+  .main-img-block {
+    width: 100%;
+    padding-left: 60px;
+    padding-top: 155px;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url($main-img-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    position: relative;
+  
+    .title {
+      display: block;
+      position: relative;
+          
+      font-family: Yeseva One, sans-serif;
+      font-size: 40px;
+      line-height: 53px;
+      text-transform: uppercase;
+  
+      margin-bottom: 19px;
+  
+      span {
+        color: $second-text-color;
+      }
+    }
+  
+    .description {
+      display: block;
+      position: relative;
+      margin-right: 792px; 
+  
+      font-family: $FuturaBookC;
+      font-size: 22px;
+      line-height: 30px;
+  
+      margin-bottom: 41px;
+    }
+  
+    .btns-block {
+      position: relative;
+     
+      .calc-subm-btn {
+        display: inline-block;
+        margin-right: 20px;
+
+        @include common-btn-styles($calc-subm-btn-width,
+                                   $calc-subm-btn-height,
+                                   $button-font-size);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+
+  .instagram-and-main-img-block {
+    
+    height: $main-picture-height-mobile;
+
+    .instagram {
+      display: none;
+    }
+
+    .main-img-block {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 85px;
+
+      .title {
+        font-size: 23px;
+        line-height: 132.83%;
+      }
+    }
+
+    .description {
+      font-size: 18px !important;
+      line-height: 135.84% !important;
+  
+      margin-bottom: 36px !important;
+      margin-right: 0 !important;
+    }
+
+    .btns-block {
+      width: 100%;
+
+      .calc-subm-btn {
+        display: block;
+
+        @include common-btn-styles($calc-subm-btn-width-mobile,
+                                   $calc-subm-btn-height,
+                                   $button-font-size);
+      }
+
+      .calc-subm-btn.transpar-btn {
+        margin-top: 20px;
+      }
+    }
+  }
+}

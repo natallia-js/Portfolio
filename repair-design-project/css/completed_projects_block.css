@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../assets/fonts/FuturaDemiC/FuturaDemiC.otf");
+  src: url("../assets/fonts/FuturaDemiC/FuturaDemiC.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../assets/fonts/FuturaBookC/FuturaBookC.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../assets/fonts/Yeseva-One/YesevaOne-Regular_v2.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+.completed-projects-block {
+  width: calc(100% - $completed-projects-block-leftpadding);
+  height: 1074px;
+  padding-left: 99.6px;
+  padding-top: 107px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 67px 97px 117px 117px 117px 117px 4em;
+  background: #131313;
+}
+.completed-projects-block .completed-projects-block-menu {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  font-size: 14px;
+  font-family: "Yeseva One", sans-serif;
+  text-transform: uppercase;
+}
+.completed-projects-block .completed-projects-block-menu .completed-projects-block-menu__item {
+  display: inline-block;
+  margin-right: 60.5px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.completed-projects-block .completed-projects-block-menu .completed-projects-block-menu__active-item {
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+}
+.completed-projects-block .completed-projects-block-menu .completed-projects-block-menu__item:active {
+  font-size: calc(100% + 5px);
+}
+.completed-projects-block .completed-projects-block-title span {
+  display: inline-block;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+.completed-projects-block .completed-projects-block-title hr {
+  display: inline-block;
+  width: 92px;
+  border: none;
+  /* Убираем границу для браузера Firefox */
+  color: #E3B873;
+  /* Цвет линии для остальных браузеров */
+  background-color: #E3B873;
+  /* Цвет линии для браузера Firefox и Opera */
+  height: 1px;
+  /* Толщина линии */
+}
+.completed-projects-block .completed-projects-block-descr {
+  font-family: FuturaBookC, sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  width: 442px;
+  height: auto;
+}
+.completed-projects-block .completed-projects-block-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.completed-projects-block .completed-projects-block-info p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 9px;
+  color: #E3B873;
+  text-transform: uppercase;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 18px;
+}
+.completed-projects-block .completed-projects-block-info span {
+  font-family: FuturaBookC, sans-serif;
+  font-size: 15px;
+}
+.completed-projects-block .completed-projects-block-slider {
+  grid-row-start: 2;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  overflow: hidden;
+}
+.completed-projects-block .completed-projects-block-slider .slider-container {
+  width: 100%;
+  height: 100%;
+}
+.completed-projects-block .completed-projects-block-onlinecolntrol {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media screen and (max-width: 680px) {
+  .completed-projects-block {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background: #131313;
+  }
+  .completed-projects-block .completed-projects-block-menu {
+    display: none;
+  }
+  .completed-projects-block .completed-projects-block-title {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  .completed-projects-block .completed-projects-block-title > hr {
+    display: none;
+  }
+  .completed-projects-block .completed-projects-block-info {
+    flex-basis: 100%;
+  }
+  .completed-projects-block .completed-projects-block-info p {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .completed-projects-block .completed-projects-block-info span {
+    padding-left: 10px;
+    font-family: FuturaBookC, sans-serif;
+    font-size: 15px;
+  }
+  .completed-projects-block .completed-projects-block-descr {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .completed-projects-block .completed-projects-block-navpages {
+    display: none;
+  }
+  .completed-projects-block .completed-projects-block-slider {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=completed_projects_block.css.map */

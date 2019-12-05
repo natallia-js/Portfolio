@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../assets/fonts/FuturaDemiC/FuturaDemiC.otf");
+  src: url("../assets/fonts/FuturaDemiC/FuturaDemiC.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../assets/fonts/FuturaBookC/FuturaBookC.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../assets/fonts/Yeseva-One/YesevaOne-Regular_v2.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+.color-btn {
+  background: #E3B873;
+  border: none;
+}
+
+.transpar-btn {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.color-btn:hover, .color-btn:focus,
+.transpar-btn:hover, .transpar-btn:focus {
+  cursor: pointer;
+}
+
+.color-btn:active,
+.transpar-btn:active {
+  transform: translate(-3px, 3px);
+  box-shadow: inset 0 0 0 10px 10px #000000;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 83px;
+  background: #131313;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: FuturaDemiC, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo {
+  position: absolute;
+  left: 5.7%;
+  color: #E3B873;
+}
+header h1 {
+  display: none;
+}
+header nav {
+  position: absolute;
+  left: 24.84%;
+  font-family: FuturaBookC, sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+header nav .main-menu-item {
+  margin-right: 6.96%;
+  text-decoration: none;
+}
+header nav .main-menu-active-item {
+  color: #E3B873;
+}
+header nav .main-menu-item:active {
+  font-size: calc(100% + 5px);
+}
+header nav .main-menu-item:hover,
+header nav .main-menu-item:focus {
+  cursor: pointer;
+}
+header .tel {
+  position: absolute;
+  left: 69.96%;
+  text-decoration-line: underline;
+  color: #E3B873;
+}
+header .request-call-btn {
+  position: absolute;
+  left: 81.85%;
+  width: 161px;
+  height: 37px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 680px) {
+  header {
+    height: 57px;
+    font-size: 12px;
+  }
+  header .logo {
+    left: 4.8%;
+  }
+  header nav {
+    display: none;
+  }
+  header .tel {
+    left: 70%;
+    text-decoration-line: none;
+    color: white;
+  }
+  header .request-call-btn {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
