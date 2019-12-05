@@ -6,7 +6,20 @@
     <title>portfolio - project</title>
     <link rel="stylesheet" href="./project_page_ref.css">
   </head>
-  <body onload="onLoad()">
+  <body onload="onBodyLoad()">
+    <div class="grid">
+      <div class="frame-cell">
+        <div class="project-wrapper">
+          <iframe id="project-frame">
+          </iframe>
+        </div>
+      </div>
+      <div class="buttons-cell">
+        <input type="button" id="switch-view" value="Mobile" onClick="switchView()">
+        <input type="button" id="back" value="Back" onClick='location.href="./index.html"'>
+      </div>
+    </div>
+
     <script>
       function getParameterByName(name, url) {
         if (!url) {
@@ -24,7 +37,7 @@
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
       }
 
-      function onLoad() {
+      function onBodyLoad() {
         let element = document.getElementById("project-frame");
         if (element) { 
           let param = getParameterByName("project", document.url);
@@ -35,7 +48,24 @@
           }
         }
       }
+
+      const POSSIBLE_VIEW_SWITCHES = ["Desktop", "Mobile"];
+      let currViewSwitch = POSSIBLE_VIEW_SWITCHES[1];
+
+      function switchView() {
+        if (currViewSwitch === POSSIBLE_VIEW_SWITCHES[0]) {
+          // Переходим с Mobile на Desktop
+          currViewSwitch = POSSIBLE_VIEW_SWITCHES[1];
+
+          document.querySelector('.project-wrapper-small').className = 'project-wrapper';
+        } else {
+          // Переходим с Desktop на Mobile
+          currViewSwitch = POSSIBLE_VIEW_SWITCHES[0];
+
+          document.querySelector('.project-wrapper').className = 'project-wrapper-small';
+        }
+        document.getElementById("switch-view").value = currViewSwitch;
+      }
     </script>
-    <iframe id="project-frame"></iframe>
   </body>
 </html>

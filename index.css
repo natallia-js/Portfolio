@@ -176,6 +176,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  cursor: pointer;
 }
 
 .theyalow-img {
@@ -183,7 +185,7 @@ body {
 }
 
 .repair-img {
-  background-image: url("./repair-design-project/image 4.3.svg");
+  background-image: url("./repair-design-project/assets/img/image 4.3.png");
 }
 
 .project__title {
@@ -219,13 +221,6 @@ body {
   font-size: 1rem;
 
   padding: 0.5rem;
-}
-
-.project-img {
-  min-width: 100%;
-  min-height: 100%;
-
-  cursor: pointer;
 }
 
 .slider__control {

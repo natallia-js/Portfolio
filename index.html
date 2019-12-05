@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>portfolio</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./swiper.css">
   </head>
   <body>
     <div class="photo-links-div">
@@ -86,7 +85,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide-right theyalow-img"></div>
+            <a class="swiper-slide-right theyalow-img" href="./project_page_ref.html?project=theyalow"></a>
           </div>
           <div class="swiper-slide">
             <div class="swiper-slide-left">
@@ -103,7 +102,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide-right repair-img"></div>
+            <a class="swiper-slide-right repair-img" href="./project_page_ref.html?project=repair"></a>
           </div>
         </div>
       </div>
@@ -116,49 +115,49 @@
     <script src="./swiper.js"></script>
     
     <script>
-      <!-- Initialize Swiper -->
-      var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      loop: true,
-      navigation: {
-        nextEl: '.slider__control_left',
-        prevEl: '.slider__control_right',
-      },
-    });
+      /* Initialize Swiper */
+      let swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+          nextEl: '.slider__control_left',
+          prevEl: '.slider__control_right',
+        },
+      });
 
-    window.addEventListener("resize", windowResize);
+      window.addEventListener("resize", windowResize);
 
-    function showProjectDescription() {
-      var descr = document.querySelectorAll(".swiper-slide-left");
-      var btn = document.querySelector(".show-descr-btn");
+      function showProjectDescription() {
+        let descr = document.querySelectorAll(".swiper-slide-left");
+        let btn = document.querySelector(".show-descr-btn");
 
-      if (btn.firstChild.data == "Show description") {
-        btn.firstChild.data = "Hide description";
-        for (let i = 0; i < descr.length; i++) {
-          
-          descr[i].style.visibility = "visible";
-        }
-      } else {
-        btn.firstChild.data = "Show description";
-        for (let i = 0; i < descr.length; i++) {
-          
-          descr[i].style.visibility = "hidden";
-        }
-      }
-    }
-
-    function windowResize() {
-      if (document.documentElement.clientWidth > 680) {
-        var btn = document.querySelector(".show-descr-btn");
-        btn.firstChild.data = "Show description";
-
-        var descr = document.querySelectorAll(".swiper-slide-left");
-        for (let i = 0; i < descr.length; i++) {
-          descr[i].style.removeProperty("visibility");
+        if (btn.firstChild.data == "Show description") {
+          btn.firstChild.data = "Hide description";
+          for (let i = 0; i < descr.length; i++) {
+            
+            descr[i].style.visibility = "visible";
+          }
+        } else {
+          btn.firstChild.data = "Show description";
+          for (let i = 0; i < descr.length; i++) {
+            
+            descr[i].style.visibility = "hidden";
+          }
         }
       }
-    }
+
+      function windowResize() {
+        if (document.documentElement.clientWidth > 680) {
+          let btn = document.querySelector(".show-descr-btn");
+          btn.firstChild.data = "Show description";
+
+          let descr = document.querySelectorAll(".swiper-slide-left");
+          for (let i = 0; i < descr.length; i++) {
+            descr[i].style.removeProperty("visibility");
+          }
+        }
+      }
 
     </script>
   </body>
