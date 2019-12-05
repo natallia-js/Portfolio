@@ -1,3 +1,3 @@
 # Portfolio
 
-The Project is not quite ready
+The SubProject "repair-design-project" is not quite ready )
