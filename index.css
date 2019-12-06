@@ -160,11 +160,14 @@ body {
   max-width: 50%;
   min-width: 50%;
   height: 100%;
-  padding: 1em;
+  padding: 2em;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
   background-color: #dfd3eb;
+
   visibility: visible;
 }
 
