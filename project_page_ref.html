@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="./project_page_ref.css">
   </head>
   <body onload="onBodyLoad()">
-    <div class="grid">
-      <div class="frame-cell">
-        <div class="project-wrapper">
-          <iframe id="project-frame">
-          </iframe>
-        </div>
-      </div>
-      <div class="buttons-cell">
+    <div class="project-wrapper">
+      <div class="project-container">
+        <iframe id="project-frame" frameborder="0"></iframe>
+      </div>  
+      <div class="buttons">
         <input type="button" id="switch-view" value="Mobile" onClick="switchView()">
         <input type="button" id="back" value="Back" onClick='location.href="./index.html"'>
       </div>
