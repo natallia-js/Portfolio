@@ -9,7 +9,7 @@
   <body onload="onBodyLoad()">
     <div class="project-wrapper">
       <div class="project-container">
-        <iframe id="project-frame" frameborder="0"></iframe>
+        <iframe id="project-frame" frameborder="0" allowfullscreen="true"></iframe>
       </div>  
       <div class="buttons">
         <input type="button" id="switch-view" value="Mobile" onClick="switchView()">
@@ -54,12 +54,12 @@
           // Переходим с Mobile на Desktop
           currViewSwitch = POSSIBLE_VIEW_SWITCHES[1];
 
-          document.querySelector('.project-wrapper-small').className = 'project-wrapper';
+          document.querySelector('.project-container-mobile').className = 'project-container';
         } else {
           // Переходим с Desktop на Mobile
           currViewSwitch = POSSIBLE_VIEW_SWITCHES[0];
 
-          document.querySelector('.project-wrapper').className = 'project-wrapper-small';
+          document.querySelector('.project-container').className = 'project-container-mobile';
         }
         document.getElementById("switch-view").value = currViewSwitch;
       }
