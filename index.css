@@ -106,6 +106,7 @@ body {
 }
 
 .education-items {
+  margin: 10px;
   font-size: 0.9rem;
 
   list-style-type: none;
