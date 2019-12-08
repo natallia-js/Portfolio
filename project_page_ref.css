@@ -48,6 +48,12 @@
 
 
 @media all and (max-width: 680px) {
+  .project-container {
+    width: 680px;
+    height: 100%;
+    margin: auto;
+  }
+
   #switch-view {
     display: none;
   }
