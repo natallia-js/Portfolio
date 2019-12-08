@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-html, body {
-  overflow: scroll;
-}
-
 .project-wrapper {
   position: fixed;
   top: 0;
@@ -52,9 +48,8 @@ html, body {
 
 @media all and (max-width: 680px) {
   .project-container {
-    width: 680px;
+    width: 100%;
     height: 100%;
-    margin: auto;
   }
 
   #switch-view {
