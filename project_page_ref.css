@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html, body {
+  overflow: scroll;
+}
+
 .project-wrapper {
   position: fixed;
   top: 0;
@@ -51,7 +55,6 @@
     width: 680px;
     height: 100%;
     margin: auto;
-    overflow: auto;
   }
 
   #switch-view {
